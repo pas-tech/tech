@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>PAS-TECH</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Josue sombo lotshango">
+	<meta name="keyword" content="Android App, Android Security, Mobile App,website app, website developpemet, Company app, Hacking, pirate,windows hacking,Wifi hacking">
+	<meta name="description" content="Softech est une companie de developpemet de logiciel mobile et l'ordinateur. Il permet a la companie de securise leur system informatique en utilisant de logiciel comme Kali linux et pare feu.">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico">
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/610a8f6562.js" crossorigin="anonymous"></script>
+	<!-- Font google
+	 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400&display=swap" rel="stylesheet">
+     -->
+     <!-- Wow libraries -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <!-- Initiation wow library inside the Pas web -->
+	   <script>
+	   new WOW().init();
+	   </script>
+	     <!-- Animated css librarie -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="manifest"  href="manisfest.json">
+</head>
+<body>
+	<!-- Menu bar -->
+<div class="container-fluid">
+	<div class="row menu">
+		<div class="space-bottom">
+
+		</div>
+		<div class="col-md-7">
+			<div class="form-group" id="lang-change">
+				<select class="form-control lang-js" onchange="langue()">
+				<option>French</option>
+				<option>English</option>
+				</select>
+			</div>
+			<i class="fas fa-times close_info" onclick="close_menu()"></i>
+			<span id="logo"><i class="fab fa-accusoft icon-logo"></i><br><span class="font">PAS-TECH</span></span>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="index.html#service">Service</a></li>
+				<li><a href="index.html#course">Cours</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+				<li><a href="index.html#profolio">Profolio</a></li>
+				<li><a href="index.html#about">
+À propos</a></li>
+				<li><a href="index.html">Login</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Start of header -->
+<header class="header">
+	<nav class="nav">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<span  id="logo"><i class="fab fa-accusoft icon-logo"></i><span class="font">PAS-TECH</span></span>
+			</div>
+			<div class="col-md-9 col-sm-7 col-xs-7">
+              <i class="fas fa-bars right" onclick="menu()"></i>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-5">
+			<img src="img/phone_banner.png" class="img-banner animated wow bounceInUp" id="logoHideMobile">
+		</div>
+		<div class="col-md-6 col-sm-10 col-xs-10 text-white text-justify ml-3">
+			<h1 class="pt-5 animated wow bounceInLeft">Bienvenu au <span class="color">Pastech</span></h1>
+		    <p class="font-mobile animated wow bounceInUp">Pastech est la meilleur companie de programmation en RDC. Développement de l'android et toute sorte de logiciel. Nous proposons au companie d'etre en ligne et vendre leur produit en toute securite.</p>
+		    <br>
+		    <div class="btn-mobile">
+		    <button class="bt mr-2 active animated wow bounceInLeft" onclick="contact()">Contact</button>
+		    <button class="bt noactive animated wow bounceInRight" onclick="profolio()">Profolio</button>
+		    </div>
+		</div>
+	</div>
+	</div>
+	</nav>
+	<div class="banner animated wow fadeInDown">
+
+	</div>
+</header>
+<!-- End of header -->
+<main class="service">
+	<!-- our service -->
+	<div class="container" id="service">
+		<h2>Notre services</h2>
+		<hr>
+		<br>
+		<div class="row">
+			 <div class="col-md-5 col-sm-12 col-xs-12 animated wow bounceInLeft">
+			 	<img src="img/phone-ser.jpg" class="img-banner">
+			 </div>
+			 <div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
+			 	<h2 class="text-left"><i class="fab fa-android"></i>&nbsp;Android App</h2>
+			 	<p class="text-justify">Pastech aide au utilisateur de developper toute sorte de logiciel qui permet au client ou soit companie de prendre l'avantage sur ces concurrents.</p>
+			 	<p class="text-left">Processus pour avoir votre App</p>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-artstation"></i><br></div><span class="box-info">Client doit avoir l'idée de <span class="mobile-text">l'application qu'il désire.</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter Pastech<span class="mobile-text"> pour le développement.</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-sketch"></i>
+			 			<br></div><span class="box-info">Pastech va designer et coder<span class="mobile-text"> l'Application.</span></span>
+			 	</div>
+			 </div>
+		</div>
+		<div class="space-bottom"></div>
+		<!-- Web info -->
+		<div class="row">
+			<div class="col-md-5 col-sm-12 col-xs-12 animated wow bounceInLeft">
+				<img src="img/web.jpg" class="img-banner">
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
+				<h2 class="text-justify"><i class="fas fa-blog"></i>&nbsp;Web App</h2>
+			 	<p class="text-justify">Pastech aide au utilisateur de développer leur propre site web qui permet aux companies d'être visible au monde. </p>
+			 	<p class="text-left">Processus pour avoir votre site web</p>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-artstation"></i>
+			 			<br></div><span class="box-info">Client doit avoir l'idée<span class="mobile-text"> de site web qu'il désire.</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter <span class="mobile-text">Pastech</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-sketch"></i>
+			 			<br></div><span class="box-info">Pastech va designer et <span class="mobile-text">coder l'Application.</span></span>
+			 	</div>
+			</div>
+		</div>
+
+		<div class="space-bottom"></div>
+		<!-- Security info -->
+		<div class="row">
+			<div class="col-md-5 col-sm-12 col-xs-12 animated wow bounceInLeft">
+				<img src="img/banner.jpg" class="img-banner">
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
+				<h2 class="text-left"><i class="fas fa-hat-cowboy"></i></i>&nbsp;Piratage</h2>
+			 	<p class="text-justify">Pastech aide au utilisateur de securise leur site web et tout leurs équipements informatiques.</p>
+			 	<p class="text-left text-mobile">Process pour securise votre App</p>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-artstation"></i>
+			 			<br></div><span class="box-info">Client doit preciseux quelle <span class="mobile-text">logiciel pour securise.</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter Pastech pour<span class="mobile-text"> le cryptography.</span></span>
+			 	</div>
+			 	<div class="box-size">
+			 		<div class="box-num"><i class="fab fa-sketch"></i>
+			 			<br></div><span class="box-info">Pastech va scanne pour trouver les faiblesse <span class="mobile-text">de logiciel et de réseaux.</span></span>
+			 	</div>
+			</div>
+		</div>
+	</div>
+	<div class="space-bottom"></div>
+	<!-- Our course -->
+	<section class="course">
+ 	<div class="container-fluid">
+ 	<div class="row mb-3">
+ 		<div class="col-md-12" id="course">
+ 			<h2>Notre cours</h2>
+ 			<hr>
+ 		</div>
+ 	</div>
+ 	<!-- End of notre course heading tags -->
+ 	<div class="container mt-4">
+ 		<div class="row">
+         <div class="box-course mr-2 ml-1 animated wow bounceInLeft">
+         	<div class="head-image">
+         		 <img src="img/python.png" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete python</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-white"></i>&nbsp;<span>4.0</span>
+         		<p class="text-right bottom">$150</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInLeft">
+         	<div class="head-image">
+         		 <img src="img/php.jpg" class="img-php">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete php course</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>&nbsp;<span>5.0</span>
+         		<p class="text-right bottom">$200</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInLeft">
+         	<div class="head-image">
+         		 <img src="img/c.jpg" class="pl-5 pt-2 img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete <q>C</q> course</h3>
+         		<p>Shadow broker</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-white"></i>
+         		<i class="fas fa-star text-white"></i>&nbsp;<span>3.0</span>
+         		<p class="text-right bottom">$100</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInLeft">
+         	<div class="head-image">
+         		 <img src="img/javascript.jpg" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete javascript</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-white"></i>&nbsp;<span>4.0</span>
+         		<p class="text-right bottom">$250</p>
+         	</div>
+
+         </div>
+ 		</div>
+ 		<br>
+ 		<!-- Server side scripting system -->
+
+ 		<div class="row">
+         <div class="box-course mr-2 ml-1 animated wow bounceInRight">
+         	<div class="head-image">
+         		 <img src="img/linux.jpg" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete linux course</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>&nbsp;<span>5.0</span>
+         		<p class="text-right bottom">$450</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInRight">
+         	<div class="head-image">
+         		 <img src="img/shell.jpg" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete shell course</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>&nbsp;<span>5.0</span>
+         		<p class="text-right bottom">$250</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInRight">
+         	<div class="head-image">
+         		 <img src="img/hacking.jpg" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete hacking</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>&nbsp;<span>5.0</span>
+         		<p class="text-right bottom">$550</p>
+         	</div>
+
+         </div>
+         <div class="box-course animated wow bounceInRight">
+         	<div class="head-image">
+         		 <img src="img/mysql.png" class="img-course">
+         	</div>
+         	<div class="head-body">
+         		<h3>Complete mysql course</h3>
+         		<p>Josue sombo</p>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>
+         		<i class="fas fa-star text-warning"></i>&nbsp;<span>5.0</span>
+         		<p class="text-right bottom">$350</p>
+         	</div>
+
+         </div>
+ 		</div>
+ 	</div>
+	 </div>
+	</section>
+	<!-- End of the class -->
+
+	<div class="space-bottom"></div>
+	<!-- Contact us info -->
+	<div class="container-fluid contact">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 col-sm-12 animated wow bounceInLeft" id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.075136751216!2d15.320367813993498!3d-4.397041596804444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a37932de16213%3A0xb6a05cd15926fb2c!2sTABERNACLE%20DE%20KINSHASA!5e0!3m2!1sfr!2scd!4v1581709483348!5m2!1sfr!2scd" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="lefttoright"></iframe>
+			</div>
+			<div class="col-md-5 col-xs-12 col-sm-12 ml-3 animated wow bounceInRight form-contact">
+				<h2 class="text-left ml-3">Etre en contact avec nous</h2>
+				<br>
+				<div class="col-md-10">
+				<form class="form-group">
+					<input type="text" name="" class="form-control name" placeholder="Nom"><br>
+					<input type="text" name="" class="form-control email" placeholder="Email"><br>
+					<input type="text" name="" class="form-control phone" placeholder="Telephone"><br>
+					<textarea name="name" rows="4" cols="80" class="form-control mb-2" placeholder="message"></textarea>
+					<input type="submit" name="" class="bt" value="Envoi" disabled>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="space-bottom"></div>
+	<div class="container-fluid">
+		<div class="row">
+            <div class="col-lg-12 col-md-12" id="profolio">
+			<h2>Notre realisation</h2>
+			<hr>
+			<br>
+		    </div>
+		    <div class="container">
+		    <div class="row">
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader1"><img src="img/restau.png" class="img-banner" height="150"> </a>
+			</div>
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader2"><img src="img/project2.png" class="img-banner"></a>
+			</div>
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader3"><img src="img/project3.png" class="img-banner"></a>
+			</div>
+			<div class="col-lg-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader4"><img src="img/project4.png" class="img-banner"></a>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader5"><img src="img/restau1.png" class="img-banner" height="150"></a>
+			</div>
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader6"><img src="img/jazz.png" class="img-banner"></a>
+			</div>
+			<div class="col-lg-3 col-md-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader7"><img src="img/jazz1.png" class="img-banner"></a>
+			</div>
+			<div class="col-lg-3">
+				<a href="#" data-toggle="modal" data-target="#imageloader8"><img src="img/jazz2.png" class="img-banner"></a>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+
+	<!-- Modal for image loader -->
+     
+    <!-- Modal content 1 --> 
+	<div id="imageloader1" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/restau.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal content 2 --> 
+	<div id="imageloader2" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/project2.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal content 3 --> 
+	<div id="imageloader3" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/project3.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal content 4 --> 
+	<div id="imageloader4" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/project4.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal content 5 --> 
+	<div id="imageloader5" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/restau1.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal content 6 --> 
+	<div id="imageloader6" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/jazz.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal content 7 --> 
+	<div id="imageloader7" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/jazz1.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal content 8 --> 
+	<div id="imageloader8" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="img/jazz2.png" class="left-img">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- End of the image loader -->
+	<div class="space-bottom"></div>
+	<div class="container-fluid">
+		<!-- Our team of developper -->
+		<div class="row team">
+			<div class="container">
+			<div class="row" id="about">
+			<div class="col-md-12 mt-5 mb-5"><h2 class="text-white pt-3">Notre équipe</h2></div>
+      <br>
+		<div class="space-bottom">
+
+		</div>
+		<div class="space-bottom">
+
+		</div>
+			<div class="col-md-3">
+			<div class="card-box animated wow bounceInLeft space-down">
+				<div class="avatar">
+					<img src="img/team/josue.jpg" class="img-team" alt="avatar">
+				</div>
+				<div class="card-body">
+					<h3>Lotshango josue</h3>
+					<p>Programmer</p>
+					<p>Le débogage devient beaucoup plus facile si vous admettez d'abord que vous êtes le problème.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Card info -->
+		<div class="col-md-3">
+			<div class="card-box animated wow bounceInLeft space-down">
+				<div class="avatar">
+					<img src="img/team/pre.jpg" class="img-team" alt="avatar">
+				</div>
+				<div class="card-body">
+					<h3>Azor</h3>
+					<p>UX & UI</p>
+					<p>Le meilleur travail que vous faites, plus les autres réduisent facilement le niveau de difficulté</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card info -->
+		<div class="col-md-3">
+			<div class="card-box animated wow bounceInLeft space-down">
+				<div class="avatar">
+					<img src="img/team/peter.jpg" class="img-team" alt="avatar">
+				</div>
+				<div class="card-body">
+					<h3>Peter</h3>
+					<p>Programmer</p>
+					<p>La paresse est votre meilleure amie. Ne faites jamais deux fois ce que vous pouvez automatiser une fois</p>
+				</div>
+			</div>
+		</div>
+		<!-- Card info -->
+		<div class="col-md-3">
+			<div class="card-box animated wow bounceInLeft">
+				<div class="avatar">
+					<img src="img/team/manager.jpg" class="img-team" alt="avatar">
+				</div>
+				<div class="card-body">
+				   <h3>Yai sewaior</h3>
+					<p>Manager</p>
+					<p>L'apprentissage est votre carburant. La stagnation est votre ennemie.</p>
+				</div>
+			</div>
+		</div>
+			<!-- End of team member -->
+		</div>
+	    </div>
+		</div>
+	</div>
+</main>
+<!-- Bootstrap Javascript library -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- Wow libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Script to be run after page load in side the web site -->
+<script>
+	function menu(){
+		var menu = document.querySelector('.menu');
+		menu.style.display = 'block';
+	}
+	function close_menu(){
+		var menu = document.querySelector('.menu');
+		menu.style.display = 'none';
+	}
+	function contact(){
+		window.location = 'index.html#contact';
+	}
+	function profolio(){
+		window.location = 'index.html#profolio';
+	}
+	function langue(){
+	var lang = document.querySelector(".lang-js");
+	var lang_js = lang.value;
+	if (lang_js === "English") {
+		window.location = 'en/index.html';
+	}else{
+      window.location = 'index.html';
+	}
+	}
+
+	function sendMail(){
+		var name = querySelector('.name');
+		var email = querySelector('.email');
+		var phone = querySelector('.phone');
+		if (name.value === '') {
+			alert('Pardon entre le nom');
+			return false;
+		}
+		else if (email.value === '') {
+			alert('Pardon entre l\'email');
+			return false;
+		}
+		else if (phone.value === '') {
+			alert('Pardon entre le numero');
+			return false;
+		}
+		else{
+			alert('Merci de nous contact' + name)
+		}
+
+	}
+</script>
+</body>
+</html>

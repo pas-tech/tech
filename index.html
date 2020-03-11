@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<title>PAS-TECH</title>
 	<meta charset="utf-8">
@@ -16,16 +16,10 @@
 	 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400&display=swap" rel="stylesheet">
      -->
-
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
      <!-- Wow libraries -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
      <!-- Initiation wow library inside the Pas web -->
 	   <script>
-	   	$(function(){
-	   		$('.loader-img').hide();
-	   		$('#hide-loader').show();
-	   	})
 	   new WOW().init();
 	   </script>
 	     <!-- Animated css librarie -->
@@ -38,6 +32,7 @@
     <link rel="manifest"  href="manisfest.json">
 </head>
 <body>
+
 <!-- Loader before everyload -->
 <div class="loader-img">
 	<div class="loader-center-img">
@@ -53,22 +48,21 @@
 		</div>
 		<div class="col-md-7">
 			<div class="form-group" id="lang-change">
-				<select class="form-control lang-js" onchange="langue()">
-				<option>French</option>
+			<select class="form-control lang-js" onchange="langue()">
 				<option>English</option>
+				<option>French</option>
 				</select>
 			</div>
 			<i class="fas fa-times close_info" onclick="close_menu()"></i>
 			<span id="logo"><i class="fab fa-accusoft icon-logo"></i><br><span class="font">PAS-TECH</span></span>
 			<ul>
-				<li><a href="index.html">Accueil</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="index.html#service">Service</a></li>
-				<li><a href="index.html#course">Cours</a></li>
+				<li><a href="index.html#course">Course</a></li>
 				<li><a href="index.html#contact">Contact</a></li>
 				<li><a href="index.html#profolio">Profolio</a></li>
-				<li><a href="index.html#about">
-Propos</a></li>
-				<li><a href="index.html">Login</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="login.html">Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -90,8 +84,8 @@ Propos</a></li>
 			<img src="img/phone_banner.png" class="img-banner animated wow bounceInUp" id="logoHideMobile">
 		</div>
 		<div class="col-md-6 col-sm-10 col-xs-10 text-white text-justify ml-3">
-			<h1 class="pt-5 animated wow bounceInLeft">Bienvenu au <span class="color">Pastech</span></h1>
-		    <p class="font-mobile animated wow bounceInUp">Pastech est la meilleur companie de programmation en RDC. Développement de l'android et toute sorte de logiciel. Nous proposons au companie d'etre en ligne et vendre leur produit en toute securite.</p>
+			<h1 class="pt-5 animated wow bounceInLeft">Welcome to <span class="color">Pastech</span></h1>
+		    <p class="font-mobile animated wow bounceInUp">Pastech is the best programming company in the DRC. Development of Android and all kinds of software. We suggest the company to be online and sell their product securely.</p>
 		    <br>
 		    <div class="btn-mobile">
 		    <button class="bt mr-2 active animated wow bounceInLeft" onclick="contact()">Contact</button>
@@ -109,7 +103,7 @@ Propos</a></li>
 <main class="service">
 	<!-- our service -->
 	<div class="container" id="service">
-		<h2>Notre services</h2>
+		<h2>Our services</h2>
 		<hr>
 		<br>
 		<div class="row">
@@ -118,17 +112,18 @@ Propos</a></li>
 			 </div>
 			 <div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
 			 	<h2 class="text-left"><i class="fab fa-android"></i>&nbsp;Android App</h2>
-			 	<p class="text-justify">Pastech aide au utilisateur de developper toute sorte de logiciel qui permet au client ou soit companie de prendre l'avantage sur ces concurrents.</p>
-			 	<p class="text-left">Processus pour avoir votre App</p>
+			 	<p class="text-justify">Pastech helps the user to develop any kind of software that allows the client or company to take advantage of these competitors.</p>
+			 	<p class="text-left">Process to have your App</p>
 			 	<div class="box-size">
-			 		<div class="box-num"><i class="fab fa-artstation"></i><br></div><span class="box-info">Client doit avoir l'idée de <span class="mobile-text">l'application qu'il désire.</span></span>
+			 		<div class="box-num"><i class="fab fa-artstation"></i><br></div><span class="box-info">Customer must have the idea of ​​the application they want.</span>
 			 	</div>
 			 	<div class="box-size">
-			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter Pastech<span class="mobile-text"> pour le développement.</span></span>
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">
+Customer should contact Pastech for development.</span>
 			 	</div>
 			 	<div class="box-size">
 			 		<div class="box-num"><i class="fab fa-sketch"></i>
-			 			<br></div><span class="box-info">Pastech va designer et coder<span class="mobile-text"> l'Application.</span></span>
+			 			<br></div><span class="box-info">Pastech will design and code<span class="mobile-text"> the software.</span></span>
 			 	</div>
 			 </div>
 		</div>
@@ -140,18 +135,19 @@ Propos</a></li>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
 				<h2 class="text-justify"><i class="fas fa-blog"></i>&nbsp;Web App</h2>
-			 	<p class="text-justify">Pastech aide au utilisateur de développer leur propre site web qui permet aux companies d'être visible au monde. </p>
-			 	<p class="text-left">Processus pour avoir votre site web</p>
+			 	<p class="text-justify">
+Pastech helps the user to develop their own website which allows companies to be visible to the world </p>
+			 	<p class="text-left">Process to have your website</p>
 			 	<div class="box-size">
 			 		<div class="box-num"><i class="fab fa-artstation"></i>
-			 			<br></div><span class="box-info">Client doit avoir l'idée<span class="mobile-text"> de site web qu'il désire.</span></span>
+			 			<br></div><span class="box-info">Client must have the idea<span class="mobile-text">of the web that he likes.</span></span>
 			 	</div>
 			 	<div class="box-size">
-			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter <span class="mobile-text">Pastech</span></span>
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client must contact <span class="mobile-text">Pastech</span></span>
 			 	</div>
 			 	<div class="box-size">
 			 		<div class="box-num"><i class="fab fa-sketch"></i>
-			 			<br></div><span class="box-info">Pastech va designer et <span class="mobile-text">coder l'Application.</span></span>
+			 			<br></div><span class="box-info">Pastech will design and <span class="mobile-text">code the website.</span></span>
 			 	</div>
 			</div>
 		</div>
@@ -163,19 +159,19 @@ Propos</a></li>
 				<img src="img/banner.jpg" class="img-banner">
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12 left-space animated wow bounceInRight">
-				<h2 class="text-left"><i class="fas fa-hat-cowboy"></i></i>&nbsp;Piratage</h2>
-			 	<p class="text-justify">Pastech aide au utilisateur de securise leur site web et tout leurs équipements informatiques.</p>
-			 	<p class="text-left text-mobile">Process pour securise votre App</p>
+				<h2 class="text-left"><i class="fas fa-hat-cowboy"></i></i>&nbsp;hacking</h2>
+			 	<p class="text-justify">Pastech helps the user to secure their website and all their IT equipment.</p>
+			 	<p class="text-left text-mobile">Process to secure your App</p>
 			 	<div class="box-size">
 			 		<div class="box-num"><i class="fab fa-artstation"></i>
-			 			<br></div><span class="box-info">Client doit preciseux quelle <span class="mobile-text">logiciel pour securise.</span></span>
+			 			<br></div><span class="box-info">Client must deside which <span class="mobile-text">software to secure.</span></span>
 			 	</div>
 			 	<div class="box-size">
-			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client doit contacter Pastech pour<span class="mobile-text"> le cryptography.</span></span>
+			 		<div class="box-num"><i class="far fa-address-card"></i><br></div><span class="box-info">Client must contact Pastech for<span class="mobile-text"> cryptography.</span></span>
 			 	</div>
 			 	<div class="box-size">
 			 		<div class="box-num"><i class="fab fa-sketch"></i>
-			 			<br></div><span class="box-info">Pastech va scanne pour trouver les faiblesse <span class="mobile-text">de logiciel et de réseaux.</span></span>
+			 			<br></div><span class="box-info">Pastech will scan to find wickeness <span class="mobile-text">of the software and network.</span></span>
 			 	</div>
 			</div>
 		</div>
@@ -186,7 +182,7 @@ Propos</a></li>
  	<div class="container-fluid">
  	<div class="row mb-3">
  		<div class="col-md-12" id="course">
- 			<h2>Notre cours</h2>
+ 			<h2>Our course</h2>
  			<hr>
  		</div>
  	</div>
@@ -340,15 +336,15 @@ Propos</a></li>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.075136751216!2d15.320367813993498!3d-4.397041596804444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a37932de16213%3A0xb6a05cd15926fb2c!2sTABERNACLE%20DE%20KINSHASA!5e0!3m2!1sfr!2scd!4v1581709483348!5m2!1sfr!2scd" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" id="lefttoright"></iframe>
 			</div>
 			<div class="col-md-5 col-xs-12 col-sm-12 ml-3 animated wow bounceInRight form-contact">
-				<h2 class="text-left ml-3">Etre en contact avec nous</h2>
+				<h2 class="text-left ml-3">Be in touch with us</h2>
 				<br>
 				<div class="col-md-10">
-				<form class="form-group">
-					<input type="text" name="" class="form-control name" placeholder="Nom"><br>
+			<form class="form-group" action="" onsubmit="return subscribe()">
+					<input type="text" name="" class="form-control name" placeholder="Name"><br>
 					<input type="text" name="" class="form-control email" placeholder="Email"><br>
-					<input type="text" name="" class="form-control phone" placeholder="Telephone"><br>
+					<input type="text" name="" class="form-control phone" placeholder="Phone"><br>
 					<textarea name="name" rows="4" cols="80" class="form-control mb-2" placeholder="message"></textarea>
-					<input type="submit" name="" class="bt" value="Envoi" disabled>
+		<input type="submit" name="" class="bt" value="Send" disabled>
 				</form>
 			</div>
 		</div>
@@ -358,7 +354,7 @@ Propos</a></li>
 	<div class="container-fluid">
 		<div class="row">
             <div class="col-lg-12 col-md-12" id="profolio">
-			<h2>Notre realisation</h2>
+			<h2>Our project</h2>
 			<hr>
 			<br>
 		    </div>
@@ -512,7 +508,7 @@ Propos</a></li>
 		<div class="row team">
 			<div class="container">
 			<div class="row" id="about">
-			<div class="col-md-12 mt-5 mb-5"><h2 class="text-white pt-3">Notre équipe</h2></div>
+			<div class="col-md-12 mt-5 mb-5"><h2 class="text-white pt-3">Our team</h2></div>
       <br>
 		<div class="space-bottom">
 
@@ -528,7 +524,7 @@ Propos</a></li>
 				<div class="card-body">
 					<h3>Lotshango josue</h3>
 					<p>Programmer</p>
-					<p>Le débogage devient beaucoup plus facile si vous admettez d'abord que vous êtes le problème.</p>
+					<p>Debugging becomes much easier if you first admit that you are the problem.</p>
 				</div>
 			</div>
 		</div>
@@ -541,7 +537,7 @@ Propos</a></li>
 				<div class="card-body">
 					<h3>Azor</h3>
 					<p>UX & UI</p>
-					<p>Le meilleur travail que vous faites, plus les autres réduisent facilement le niveau de difficulté</p>
+					<p>The better work you do, the more easily others reduce the level of difficulty</p>
 				</div>
 			</div>
 		</div>
@@ -555,7 +551,7 @@ Propos</a></li>
 				<div class="card-body">
 					<h3>Peter</h3>
 					<p>Programmer</p>
-					<p>La paresse est votre meilleure amie. Ne faites jamais deux fois ce que vous pouvez automatiser une fois</p>
+					<p>Laziness is your best friend. Never do twice what you can automate once</p>
 				</div>
 			</div>
 		</div>
@@ -568,7 +564,7 @@ Propos</a></li>
 				<div class="card-body">
 				   <h3>Yai sewaior</h3>
 					<p>Manager</p>
-					<p>L'apprentissage est votre carburant. La stagnation est votre ennemie.</p>
+					<p>Learning is your fuel. Stagnation is your enemy.</p>
 				</div>
 			</div>
 		</div>
@@ -578,9 +574,9 @@ Propos</a></li>
 		</div>
 	</div>
 </main>
-<!-- End of loader -->
 </main>
 <!-- Bootstrap Javascript library -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <!-- Wow libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -601,20 +597,24 @@ Propos</a></li>
 	function profolio(){
 		window.location = 'index.html#profolio';
 	}
+
 	function langue(){
 	var lang = document.querySelector(".lang-js");
 	var lang_js = lang.value;
-	if (lang_js === "English") {
-		window.location = 'en/index.html';
+	if (lang_js === "French") {
+		window.location = '../index.html';
 	}else{
       window.location = 'index.html';
 	}
 	}
 
-	function sendMail(){
+	function subscribe(){
 		var name = querySelector('.name');
 		var email = querySelector('.email');
 		var phone = querySelector('.phone');
+		//testing only dear programmer
+
+		alert('Hello from hacker')
 		if (name.value === '') {
 			alert('Pardon entre le nom');
 			return false;

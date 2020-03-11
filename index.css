@@ -3,8 +3,8 @@
 	/*background: linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(img/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;*/
-
-	background: linear-gradient(45deg,#2f2fa2 80%,#242582);
+    background-color: #0769ad;
+	/*background: linear-gradient(45deg,#2f2fa2 80%,#242582);*/
 	box-shadow: 1px 2px 3px #fff;
 }
 
@@ -56,7 +56,7 @@ nav button{
 	font-size: 20px;
 }
 .header:hover{
-	background: #242582;
+	background: #06568e;
 }
 .nav{
 	padding-top: 40px;
@@ -92,7 +92,8 @@ font-family: 'Shrikhand', cursive;
 	padding: 5px;
 	padding-left: 7px;
 	padding-right: 7px;
-	background: #242582;
+	background: #06568e;
+	border:1px solid #06568e;
 	font-size: 1.5rem;
 	cursor: pointer;
 }
@@ -103,7 +104,7 @@ font-family: 'Shrikhand', cursive;
 .bt{
 	width: 20%;
 	color:#fff;
-	background: #2f2fa2;
+	background: #06568e;
 	border:none;
 	border-radius: 5px;
 	padding:10px;
@@ -112,7 +113,7 @@ font-family: 'Shrikhand', cursive;
 	background: #f64c72;
 }
 .active:hover{
-	background: #242582;
+	background: #06568e;
 	border:1px solid #f64c72;
 }
 .noactive{

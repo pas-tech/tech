@@ -39,9 +39,6 @@
  left: 50%;
  transform: translate(-50%, -50%);
 }
-#hide-loader{
-	display: none;
-}
 
 /* End of Loader detail before page load */
 .left-img{
